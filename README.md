@@ -23,8 +23,10 @@ Obs.:
 End Sub
 
 Sub debug(msg)
+
 	set pyDebug = CreateObject("WSCript.shell")
 	pyDebug.run ".\elipseE3Debug\e3DebugCli.py [PORT] """& msg & """",0,True
+	
 End Sub
 
 Sub a()
